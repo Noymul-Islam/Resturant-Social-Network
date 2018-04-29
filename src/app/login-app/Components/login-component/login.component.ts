@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   title = 'app';
+  loginBackgroundimage="url(assets/login_background.jpg)"
   
 }
