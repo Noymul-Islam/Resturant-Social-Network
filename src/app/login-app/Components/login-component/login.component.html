@@ -5,15 +5,26 @@
 
         </mat-card-header>
       
-        <mat-card-content>
-          <i>
-              Loginddad
-          </i>
+        <mat-card-content class="text-center">
+          <div>
+              <i class="font-size-fixed-18">
+                  Login
+              </i>
+          </div>
+          <form>
+            <mat-form-field>
+               <input matInput placeholder="Email">    
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Enter password" type="password">    
+            </mat-form-field>
+          </form>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
+          <button mat-fab>Login</button>
+          
         </mat-card-actions>
+        <p>Do not have a account? <a href="#">click</a> to sign in</p>
       </mat-card>
     </div>
 
