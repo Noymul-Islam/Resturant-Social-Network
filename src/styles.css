@@ -13,3 +13,12 @@ html,body{
 .font-size-fixed-18{
   font-size: 18px !important;
 }
+.mat-form-field-block{
+    display: block !important;
+}
+.width-70-percent{
+    width: 70%;
+}
+.font-size-fixed-14{
+    font-size:14px
+}
