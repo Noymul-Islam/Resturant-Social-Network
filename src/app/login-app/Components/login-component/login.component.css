@@ -5,3 +5,8 @@
 .login-background{
    height: 100%;
 }
+.login-card{
+    color:black;
+    background-color: white;
+    width:400px
+}
