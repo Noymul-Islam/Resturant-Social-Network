@@ -1,14 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatButton} from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
-import {MatToolbarModule} from '@angular/material/toolbar'
-
-
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppComponent } from './root.component';
-import {TestModule} from '../test-app/test.module'
 import {LoginModule} from '../login-app/login.module';
-import {AppRoutingModule} from '../RoutingConfiguration/routing-module';
+import {AppRoutingModule} from './root-routing.module';
+import {CommonModule} from '@angular/common';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+
 
 
 @NgModule({
@@ -16,12 +16,13 @@ import {AppRoutingModule} from '../RoutingConfiguration/routing-module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+   BrowserAnimationsModule,
     FlexLayoutModule,
     MatToolbarModule,
-    TestModule,
     LoginModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

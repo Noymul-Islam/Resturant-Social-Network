@@ -1,11 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
 import {MatButton} from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
-import {MatToolbarModule} from '@angular/material/toolbar'
-
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {CommonModule} from '@angular/common';
 import { TestComponent } from './test.component';
+import {TestRoutingModule} from './test-routing.module';
 
 
 @NgModule({
@@ -13,12 +13,18 @@ import { TestComponent } from './test.component';
     TestComponent
   ],
   imports: [
-    BrowserModule,
     FlexLayoutModule,
-    MatToolbarModule
+    MatToolbarModule,
+    TestRoutingModule,
+    CommonModule   
   ],
   providers: [],
   bootstrap: [TestComponent],
   exports: [TestComponent]
 })
-export class TestModule { }
+export class TestModule {
+  constructor(){
+    console.log("Hello");
+  }
+
+ }

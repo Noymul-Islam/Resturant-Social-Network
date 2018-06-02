@@ -1,27 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatButton} from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+//import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { LoginComponent } from './Components/login-component/login.component';
-import {AppRoutingModule} from '../RoutingConfiguration/routing-module';
-
+import {AppRootRoutingModule} from '../RoutingConfiguration/routing-module';
+import {CommonModule} from '@angular/common';
+//import {OrdersModule} from '../orders/orders.module';
 
 @NgModule({
   declarations: [
     LoginComponent
   ],
   imports: [
-    BrowserModule,
+  //s  BrowserAnimationsModule,
+    CommonModule,
     FlexLayoutModule,
     MatToolbarModule,
     MatCardModule,
     MatInputModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
+    AppRootRoutingModule
  
   ],
   providers: [],
