@@ -3,13 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import {AppComponent} from './root.component';
 
-const routes: Routes = [
-    {
-      path: '',
-      component: AppComponent    }
-  ];
+
   @NgModule({
-    imports: [RouterModule.forChild(routes)],
+    imports: [//RouterModule.forChild(routes)
+    ],
     exports: [RouterModule]
   })
   

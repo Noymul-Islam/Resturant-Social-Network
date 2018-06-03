@@ -6,8 +6,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {CommonModule} from '@angular/common';
 import { TestComponent } from './test.component';
 import {TestRoutingModule} from './test-routing.module';
-
-
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  {
+    path: '',
+    component: TestComponent
+  }
+];
 @NgModule({
   declarations: [
     TestComponent
@@ -16,11 +21,12 @@ import {TestRoutingModule} from './test-routing.module';
     FlexLayoutModule,
     MatToolbarModule,
     TestRoutingModule,
-    CommonModule   
+    CommonModule,
+    RouterModule.forChild(routes)   
   ],
   providers: [],
   bootstrap: [TestComponent],
-  exports: [TestComponent]
+  exports: [TestComponent,RouterModule]
 })
 export class TestModule {
   constructor(){

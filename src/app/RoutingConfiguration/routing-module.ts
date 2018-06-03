@@ -9,15 +9,15 @@ const appRoutes : Routes=[
 {path:'user', 
     loadChildren:'app/test-app/test.module#TestModule'
 },
-{path:'', 
-loadChildren:'app/root-app/root.module#AppModule'
+{path:'login', 
+loadChildren:'app/login-app/login.module#LoginModule'
 }
 ];
 @NgModule({
     imports: [
 
-        RouterModule.forRoot(appRoutes,{useHash: false}),
-        
+        RouterModule.forRoot(appRoutes,{useHash: true})
+      
        
     ],
     exports:[RouterModule]

@@ -9,24 +9,35 @@ import { LoginComponent } from './Components/login-component/login.component';
 import {AppRootRoutingModule} from '../RoutingConfiguration/routing-module';
 import {CommonModule} from '@angular/common';
 //import {OrdersModule} from '../orders/orders.module';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+    {
+      path: '', component:  LoginComponent }
+    ];
 
 @NgModule({
   declarations: [
     LoginComponent
   ],
   imports: [
-  //s  BrowserAnimationsModule,
+    //BrowserAnimationsModule,
     CommonModule,
+    RouterModule.forChild(routes),
     FlexLayoutModule,
     MatToolbarModule,
     MatCardModule,
-    MatInputModule,
-    AppRootRoutingModule
+    MatInputModule
  
   ],
   providers: [],
   bootstrap: [LoginComponent],
-  exports:[LoginComponent]
+  exports:[LoginComponent,RouterModule]
 
 })
-export class LoginModule { }
+export class LoginModule {
+
+  constructor(){
+    console.log("Login Module");
+  }
+ }
