@@ -6,8 +6,8 @@ import {TestModule} from '../test-app/test.module';
 import{AppModule} from '../root-app/root.module';
 
 const appRoutes : Routes=[
-{path:'user', 
-    loadChildren:'app/test-app/test.module#TestModule'
+{path:'signup', 
+    loadChildren:'app/signup-app/signup.module#SignUpModule'
 },
 {path:'login', 
 loadChildren:'app/login-app/login.module#LoginModule'
