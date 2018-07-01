@@ -7,10 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignUpComponent {
+  person : any = {};
   constructor(){
-    console.log("LogIN Component");
+  
   }
-  title = 'app';
+  onSubmit()
+  {
+    console.log(this.person);
+    
+  }
   
   
 }

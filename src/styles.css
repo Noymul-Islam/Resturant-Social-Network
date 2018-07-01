@@ -22,3 +22,6 @@ html,body{
 .font-size-fixed-14{
     font-size:14px
 }
+.padding-top-15{
+    padding-top: 15px !important;
+}

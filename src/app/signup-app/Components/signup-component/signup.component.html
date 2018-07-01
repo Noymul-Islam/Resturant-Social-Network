@@ -11,20 +11,35 @@
                   Create an acount
               </i>
           </div>
-          <!-- <form>
+          <form (ngSubmit)="onSubmit()">
+              <mat-form-field class="mat-form-field-block">
+                  <input matInput placeholder="First name" name="firstName"  [(ngModel)]="person.firstName"
+                  required>    
+               </mat-form-field>
+               <mat-form-field class="mat-form-field-block">
+                  <input matInput placeholder="Last name" name="lastName" required [(ngModel)]="person.lastName">    
+               </mat-form-field>
+               <mat-form-field class="mat-form-field-block">
+                  <input matInput placeholder="Address of your resturant" name="address" [(ngModel)]="person.address" required>    
+               </mat-form-field>
             <mat-form-field class="mat-form-field-block">
-               <input matInput placeholder="Email">    
+               <input matInput placeholder="Email" [(ngModel)]="person.email" name="email" required>    
             </mat-form-field>
             <mat-form-field class="mat-form-field-block">
-                <input matInput placeholder="Enter password" type="password">    
+                <input matInput placeholder="Enter password" type="password" [(ngModel)]="person.password" name="password" required>    
             </mat-form-field>
-          </form> -->
+            <mat-form-field class="mat-form-field-block">
+                <input matInput placeholder="Confirm password" type="password" [(ngModel)]="person.confirmPassword" name="confirmPassword" required>    
+            </mat-form-field>
+            <div fxLayout="column" fxLayoutAlign="center center" class="full-width padding-top-15" >
+                <button  class="full-width font-size-fixed-14" type="submit" mat-fab>SignUp</button>
+            </div>  
+             
+          </form>
         </mat-card-content>
-        <mat-card-actions fxLayout="column" fxLayoutAlign="center center" class="full-width" >
-          <button  class="width-70-percent font-size-fixed-14" mat-fab>SignUp</button>
-          
-        </mat-card-actions>
-        <p>Do not have a account? <a href="#">click</a> to sign in</p>
+        
+        
+        <p>Have an account? <a routerLink="/login">click</a> to sign in</p>
       </mat-card>
     </div>
 

@@ -10,6 +10,7 @@ import {AppRootRoutingModule} from '../RoutingConfiguration/routing-module';
 import {CommonModule} from '@angular/common';
 //import {OrdersModule} from '../orders/orders.module';
 import { Routes, RouterModule } from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 const routes: Routes = [
     {
@@ -27,8 +28,8 @@ const routes: Routes = [
     FlexLayoutModule,
     MatToolbarModule,
     MatCardModule,
-    MatInputModule
- 
+    MatInputModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [SignUpComponent],

@@ -5,6 +5,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppComponent } from './root.component';
 import {AppRoutingModule} from './root-routing.module';
 import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRootRoutingModule} from '../RoutingConfiguration/routing-module';
 
@@ -21,7 +22,9 @@ import {AppRootRoutingModule} from '../RoutingConfiguration/routing-module';
     MatToolbarModule,
     AppRoutingModule,
     CommonModule,
-    AppRootRoutingModule
+    AppRootRoutingModule,
+    FormsModule
+   
     
   ],
   providers: [],
