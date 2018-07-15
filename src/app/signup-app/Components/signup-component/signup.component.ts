@@ -13,7 +13,7 @@ export class SignUpComponent {
   }
   onSubmit()
   {
-    console.log(this.person);
+  
     
   }
   

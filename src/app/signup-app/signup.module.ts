@@ -11,6 +11,8 @@ import {CommonModule} from '@angular/common';
 //import {OrdersModule} from '../orders/orders.module';
 import { Routes, RouterModule } from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import { AgmCoreModule } from '@agm/core';
+import {ReactiveFormsModule} from '@angular/forms';
 
 const routes: Routes = [
     {
